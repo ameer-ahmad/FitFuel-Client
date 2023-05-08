@@ -6,7 +6,7 @@ const FoodDetails = ({ food }) => {
     const { dispatch } = useFoodContext()
 
     const handleClick = async () => {
-        const response = await fetch('/api/food/' + food._id, {
+        const response = await fetch('https://fit-fuel.herokuapp.com/api/food/' + food._id, {
             method: 'DELETE'
         }) 
         const json = await response.json()

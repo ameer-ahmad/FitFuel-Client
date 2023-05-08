@@ -10,7 +10,7 @@ const Food = () => {
 
     useEffect(() => {
         const fetchFood = async () => {
-            const response = await fetch('/api/food')
+            const response = await fetch('https://fit-fuel.herokuapp.com/api/food')
             const json = await response.json()
 
             if (response.ok) {
