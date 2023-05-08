@@ -167,3 +167,10 @@ input:checked + .slider:before {
   display: flex;
   justify-content: space-between;
 }
+
+@media only screen and (max-width: 600px) {
+  .home {
+    grid-template-columns: 1fr;
+  }
+  
+}
