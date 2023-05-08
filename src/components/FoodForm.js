@@ -17,7 +17,7 @@ const FoodForm = () => {
 
         const food = { title, calories, protein, carbs, fat }
 
-        const response = await fetch('https://fit-fuel.herokuapp.com/api/food', {
+        const response = await fetch('/api/food', {
             method: 'POST',
             body: JSON.stringify(food),
             headers: { 'Content-Type': 'application/json'}
